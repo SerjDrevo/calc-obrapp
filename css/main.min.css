@@ -1,0 +1,411 @@
+@font-face {
+    font-family: roboto-example;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/RobotoRegular/RobotoRegular.eot);
+    src: url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"), url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: roboto-example;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/RobotoBold/RobotoBold.eot);
+    src: url(../fonts/RobotoBold/RobotoBold.eot?#iefix) format("embedded-opentype"), url(../fonts/RobotoBold/RobotoBold.woff) format("woff"), url(../fonts/RobotoBold/RobotoBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Euclid;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/EuclidCircularA/EuclidCircularA-Regular.eot);
+    src: url(../fonts/EuclidCircularA/EuclidCircularA-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/EuclidCircularA/EuclidCircularA-Regular.woff) format("woff"), url(../fonts/EuclidCircularA/EuclidCircularA-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: EuclidB;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/EuclidCircularABold/EuclidCircularA-Bold.eot);
+    src: url(../fonts/EuclidCircularABold/EuclidCircularA-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/EuclidCircularABold/EuclidCircularA-Bold.woff) format("woff"), url(../fonts/EuclidCircularABold/EuclidCircularA-Bold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: EuclidL;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/EuclidCircularALight/EuclidCircularA-Light.eot);
+    src: url(../fonts/EuclidCircularALight/EuclidCircularA-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/EuclidCircularALight/EuclidCircularA-Light.woff) format("woff"), url(../fonts/EuclidCircularALight/EuclidCircularA-Light.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: fw-brand;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/fontawesome/brands/fa-brands-400.eot);
+    src: url(../fonts/fontawesome/brands/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../fonts/fontawesome/brands/fa-brands-400.woff) format("woff"), url(../fonts/fontawesome/brands/fa-brands-400.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: fw;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/fontawesome/regular/fa-regular-400.eot);
+    src: url(../fonts/fontawesome/regular/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../fonts/fontawesome/regular/fa-regular-400.woff) format("woff"), url(../fonts/fontawesome/regular/fa-regular-400.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: fw-solid;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/fontawesome/solid/fa-solid-900.eot);
+    src: url(../fonts/fontawesome/solid/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../fonts/fontawesome/solid/fa-solid-900.woff) format("woff"), url(../fonts/fontawesome/solid/fa-solid-900.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: fw-light;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/fontawesome/light/fa-light-300.eot);
+    src: url(../fonts/fontawesome/light/fa-light-300.eot?#iefix) format("embedded-opentype"), url(../fonts/fontawesome/light/fa-light-300.woff) format("woff"), url(../fonts/fontawesome/light/fa-light-300.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: fw-duotone;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/fontawesome/duotone/fa-duotone-900.eot);
+    src: url(../fonts/fontawesome/duotone/fa-duotone-900.eot?#iefix) format("embedded-opentype"), url(../fonts/fontawesome/duotone/fa-duotone-900.woff) format("woff"), url(../fonts/fontawesome/duotone/fa-duotone-900.ttf) format("truetype")
+}
+
+body {
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+}
+
+/* main cal styles start */
+
+.calcheader {
+    height: 50px;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+}
+
+.calcmenu .calcmenu__item {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 15px
+}
+
+.calcmenu .calcmenu__item .calcmenu__item-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 7px 20px;
+}
+
+.calcmenu .calcmenu__item .calcmenu__item-link:hover {
+    background-color: #62ad2d;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mainactive {
+    background-color: #62ad2d;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mainactive:hover {
+    background-color: #569629;
+}
+
+.calclogobox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.calclogo {
+    width: 25%;
+}
+
+.calclogo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.calccontactbox {
+    width: 600px;
+}
+
+.calcphone {
+    display: block;
+}
+
+.calcphone a {
+    display: block;
+    font-size: 18px;
+    color: #666;
+    text-decoration: none;
+    padding: 10px 1px;
+}
+
+.mainp {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+/* main cal styles end */
+
+.calc__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.calc__block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px
+}
+
+.calc__title {
+    margin-right: 5px
+}
+
+.calc__select {
+    height: 30px
+}
+
+.type__select {
+    width: 140px
+}
+
+.quantity__input {
+    height: 24px;
+    width: 140px
+}
+
+.add__btn {
+    height: 30px
+}
+
+.result__wrapper {
+    margin-top: 100px;
+    border-collapse: separate;
+    border-spacing: 0
+}
+
+.result__header {
+    border-spacing: 5px;
+    display: none
+}
+
+.result__body--total {
+    display: none
+}
+
+.result__body--total .body__block {
+    font-weight: 600
+}
+
+.header__block {
+    text-align: center;
+    border: 1px solid #057738;
+    border-left: none;
+    padding: 5px;
+    background-color: #00a651;
+    color: #fff
+}
+
+.header__block:last-child {
+    border-left: 1px solid #057738
+}
+
+.result__body {
+    text-align: center
+}
+
+.body__block {
+    border: 1px solid #ddd;
+    padding: 5px
+}
+
+.calc__antiseptic--hidden {
+    display: none
+}
+
+.calc__antiseptic--hidden.fadeIn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.calc__add {
+    margin-top: 50px
+}
+
+.add__btn {
+    background-color: #00a651;
+    color: #fff;
+    height: 30px;
+    border-color: #00a651
+}
+
+.block__error {
+    color: tomato;
+    display: none
+}
+
+.intisemp__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.antiseptic__checkbox {
+    width: 20px;
+    height: 20px
+}
+
+.result__delete-row {
+    color: tomato;
+    cursor: pointer
+}
+
+.result__container {
+    margin-bottom: 50px
+}
+
+@media only screen and (max-width:1200px) {
+    .calc__wrapper {
+        overflow: scroll;
+        white-space: nowrap;
+        padding: 15px 0
+    }
+}
+
+@media only screen and (max-width:992px) {
+
+    .culc__h3,
+    .culc__p {
+        text-align: center;
+        padding: 0 15px
+    }
+
+    .calc__wrapper {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+
+    .calc__wrapper .calc__block {
+        -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%
+    }
+
+    .calc__wrapper .calc__block .calc__select {
+        max-width: 150px
+    }
+
+    .calc__wrapper .calc__block .add__btn {
+        max-width: 150px
+    }
+
+    .block__error {
+        margin-bottom: 0
+    }
+
+    .calc__title {
+        margin-right: 0
+    }
+
+    .result__container {
+        overflow: auto;
+        width: 100%;
+        white-space: nowrap
+    }
+
+    .result__container .result__wrapper {
+        margin-top: 40px
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .calc__wrapper .calc__block {
+        -webkit-flex-basis: 35%;
+        -ms-flex-preferred-size: 35%;
+        flex-basis: 35%
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .calc__wrapper .calc__block {
+        -webkit-flex-basis: 80%;
+        -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+        margin-right: 0;
+        padding: 0 15px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .intisemp__wrapper {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .calc__wrapper .calc__block .calc__select {
+        width: 100%;
+        max-width: 220px
+    }
+
+    .quantity__input {
+        width: 100%;
+        max-width: 220px
+    }
+
+    .add__btn {
+        width: 100%
+    }
+}

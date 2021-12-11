@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drevoline - обрезных пиломатериалов</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+    <div class="calcheader">
+        <nav>
+            <ul class="calcmenu">
+                <li class="calcmenu__item">
+                    <a id="mainactive" class="calcmenu__item-link" href="https://drevoline.com.ua">Вернутся на
+                        главную</a>
+                </li>
+                <li class="calcmenu__item">
+                    <a class="calcmenu__item-link" href="https://goo.gl/maps/xunfNBU8qTK3uL1V8">Отзывы Google</a>
+                </li>
+                <li class="calcmenu__item">
+                    <a class="calcmenu__item-link"
+                        href="https://drevoline.com.ua/catalog/cal-mebelapp/calc.html">Просчёт мебельных щитов</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="calclogobox">
+        <div class="calclogo">
+            <a href="https://drevoline.com.ua/"><img src="img/drevoline-logo2.png" alt=""></a>
+        </div>
+        <div class="calccontactbox">
+            <div class="calconbox">
+            </div>
+        </div>
+        <div class="calcphone">
+            <a href="tel:+380951093428">+38 (095) 109-34-28</a>
+            <a href="tel:+380989209410">+38 (098) 920-94-10</a>
+        </div>
+    </div>
+        <p  class="culc__p mainp"><b>Введите желаемые параметры пиломатериала в поле калькулятора и кликните "Добавить" !</b></p>
+    <section class="calc__wrapper">
+        
+        <div class="calc__block calc__type">
+            <p class="calc__title type__title">Влажность материала</p>
+            <select  class="calc__select type__select">
+                <option value="Свежепил">Свежепил</option>
+                <option value="Сухой брус/доска">Сухой</option>
+            
+            </select>
+        </div>
+        <div class="calc__block calc__thickness">
+            <p class="calc__title thickness__title">Толщина(мм.)</p>
+            <select  class="calc__select thickness__select">
+                <option disabled>Выберите толщину</option>
+                <option value="25">27</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="120">120</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+            </select>
+        </div>
+
+        <div class="calc__block calc__width">
+            <p class="calc__title width__title">Ширина (мм.)</p>
+            <select  class="calc__select width__select">
+                <option disabled>Выберите ширину</option>
+                <option value="100">100</option>
+                <option value="120">120</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+            </select>
+        </div>
+
+        <div class="calc__block calc__length">
+            <p class="calc__title length__title">Длина (мм.)</p>
+            <select  class="calc__select length__select">
+                <option disabled>Выберите длину</option>
+                <option value="4500">4500</option>
+                <option value="5000">6000</option>
+            </select>
+        </div>
+
+        <div class="calc__block calc__quantity">
+            <p class="calc__title quantity__title">Количество (шт.)</p>
+           <input class="quantity__input" type="number" placeholder="Введите количество">
+           <p class="block__error">Заполните Поле!</p>
+        </div>
+
+        <div class="calc__block calc__antiseptic">
+            <p class="calc__title antiseptic__title">Обработка антисептиком</p>
+           <div class="intisemp__wrapper">
+               <input class="antiseptic__checkbox" type="checkbox" >
+               <div class="calc__block calc__antiseptic--hidden">
+                <select  class="calc__select antiseptic__select">
+                    <option value="БИО защита">БИО защита</option>
+                    <option value="Огнебио">Огнебио</option>
+                </select>
+           </div>
+        </div>
+        </div>
+
+        
+
+        <div class="calc__block calc__add">
+           <button class="add__btn">Добавить</button>
+        </div>
+
+    </section>
+
+
+    <!-- ////////////////////////  -->
+    <div class="result__container">
+        <table class="result__wrapper">
+            <tbody>
+                 <tr class="result__header">
+                    <th class="header__block header__type">Влажность материала</th>
+                    <th class="header__block header__thickness">Толщина (мм)</th>
+                    <th class="header__block header__width">Ширина (мм)</th>
+                    <th class="header__block header__length">Длина (мм)</td>
+                    <th class="header__block header__quantity">Кол-во шт</td>
+                    <th class="header__block header__volume">Объем м3</td>
+                    <th class="header__block header__price-volume">Цена за м3</td>
+                    <th class="header__block header__price-mp">Цена за м/п</td>
+                    <th class="header__block header__price-quantity">Цена за шт</td>
+                    <th class="header__block header__total">Стоимость</td>
+                    <th class="header__block header__antiseptic">Антисептирование стоимость</td>
+                    <th class="header__block header__antiseptic">Сумма</td>
+                    <th class="header__block header__delete">&nbsp;</td>
+                </tr> 
+                <div class="result-row__wrapper">
+
+                </div>
+             
+                <tr class="result__body result__body--total">
+                    <td class="body__block result__type">Итого:</td>
+                    <td class="body__block result__thickness">-</td>
+                    <td class="body__block result__width">-</td>
+                    <td class="body__block result__length">-</td>
+                    <td class="body__block result__quantity">-</td>
+                    <td class="body__block result__volume">-</td>
+                    <td class="body__block result__price-volume">-</td>
+                    <td class="body__block result__price-mp">-</td>
+                    <td class="body__block result__price-quantity">-</td>
+                    <td class="body__block result__total">-</td>
+                    <td class="body__block result__antiseptic">-</td> 
+                    <td class="body__block result__fullprice">-</td> 
+                    <td class="body__block"></td> 
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+    <script src="js/common.js"></script>
+</body>
+</html>
